@@ -83,12 +83,12 @@ Cloner ou télécharger le dépôt, puis placer les fichiers dans le même dossi
 
 ```
 votre-dossier/
-├── ECE_Manager_Pro.html   ← application principale
+├── index.html             ← application principale
 ├── spritesheet.png        ← sprite du personnage (animation)
 └── physique.csv           ← votre export PRONOTE (optionnel au démarrage)
 ```
 
-Ouvrir `ECE_Manager_Pro.html` dans Chrome, Firefox, Edge ou Safari.
+Ouvrir `index.html` dans Chrome, Firefox, Edge ou Safari.
 
 ---
 
