@@ -214,7 +214,7 @@
       background: var(--bg-surface);
       border: 1px solid var(--border);
       border-radius: var(--r-md);
-      overflow: hidden;
+      overflow: visible;
       transition: border-color 0.3s;
     }
     .sec:hover { border-color: var(--border-mid); }
@@ -434,12 +434,12 @@
 
     /* ── Subject grid ── */
     .subject-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 6px;
       margin-top: 8px;
     }
-    .subject-grid input { font-size: 11px; padding: 6px 10px; }
+    .subject-grid input { font-size: 11px; padding: 7px 10px; width: 100%; }
 
     /* ── Search ── */
     .search-wrap {
@@ -1202,11 +1202,11 @@
 
       <!-- Steps -->
       <div class="plan-steps" id="plan-steps">
-        <div class="ps" data-i="0">Mélange des élèves</div>
-        <div class="ps" data-i="1">Attribution jury</div>
-        <div class="ps" data-i="2">Équilibrage</div>
-        <div class="ps" data-i="3">Sujets TP</div>
-        <div class="ps" data-i="4">Validation</div>
+        <div class="ps" data-i="0">🔀 Mélange des élèves</div>
+        <div class="ps" data-i="1">🎯 Attribution jury</div>
+        <div class="ps" data-i="2">⚖️ Équilibrage</div>
+        <div class="ps" data-i="3">📋 Sujets TP</div>
+        <div class="ps" data-i="4">✅ Validation</div>
       </div>
     </div>
 
@@ -1359,7 +1359,7 @@
           <button class="tab active" onclick="switchTab('fiches',this)">Fiches de salle</button>
           <button class="tab" onclick="switchTab('guide',this)">Documentation</button>
         </div>
-        <div style="font-size:11px;color:var(--text4);font-family:var(--font-mono)">Session 2025–2026</div>
+        <div style="font-size:11px;color:var(--text4);font-family:var(--font-mono)">Session 2026–2027</div>
       </div>
       <div class="head-actions">
         <button class="btn-sm" onclick="App.exportCSV()" id="export-btn" style="display:none">⬇ Export CSV</button>
